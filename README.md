@@ -19,24 +19,12 @@ then run `make` to build TivaWare.
     unzip SW-TM4C-*.exe
     make
 
-## Writing and Building Firmware
+## Writing, Building and flashing Firmware
 
-1. Run `make`
+1. Put your code in the ./src folder
 
-2. The output files will be created in the 'build' folder
+2. Run rebuildAndUpload.sh
 
-## Flashing
-
-The easiest way to flash your device is using lm4flash. First, grab lm4tools
-from Git.
-
-    git clone git://github.com/utzig/lm4tools.git
-
-Then build lm4flash and run it:
-
-    cd lm4tools/lm4flash
-    make
-    lm4flash /path/to/executable.bin
 
 ## Credits
 
