@@ -15,6 +15,10 @@
 #define LED_BLUE GPIO_PIN_2
 #define LED_GREEN GPIO_PIN_3
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int main()
 {
     ROM_SysCtlClockSet(SYSCTL_SYSDIV_4|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
@@ -30,3 +34,7 @@ int main()
     }
 
 }
+
+#ifdef __cplusplus
+}
+#endif

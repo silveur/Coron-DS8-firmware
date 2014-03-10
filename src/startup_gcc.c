@@ -27,6 +27,10 @@
 #include "inc/hw_nvic.h"
 #include "inc/hw_types.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 //*****************************************************************************
 //
 // Forward declaration of the default fault handlers.
@@ -341,3 +345,7 @@ IntDefaultHandler(void)
     {
     }
 }
+	
+#ifdef __cplusplus
+}
+#endif
