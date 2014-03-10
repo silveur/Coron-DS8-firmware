@@ -1,4 +1,4 @@
-Tiva Template
+Coron-DS8 firmware
 ==================
 
 ## Toolchain
