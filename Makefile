@@ -27,7 +27,7 @@ TIVAWARE_PATH = ./tivaware
 # LD_SCRIPT: linker script
 LD_SCRIPT = $(MCU).ld
 
-OBJECTS = $(C_SRC:%.c=$OUTDIR/%.o)
+OBJECTS = $(C_SRC:%.c=$(OUTDIR)/%.o)
 
 all: $(OUTDIR)/$(TARGET).bin
 
